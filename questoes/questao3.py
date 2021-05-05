@@ -58,6 +58,20 @@ def soma_matriz(matriz_a, matriz_b):
     return resultado
 
 
+# função para calcular o somatório das matrizes
+def somatorio_matriz(matriz):
+    linhas = len(matriz)
+    colunas = len(matriz[0])
+    resultado = 0
+
+    for i in range(0, linhas):
+        for j in range(0, colunas):
+            print("(i:{} j:{}) → {}\t+\t{} =".format(i+1, j+1, matriz[i][j], resultado), end=" {} | \n".format(resultado + int(matriz[i][j])))
+            resultado = resultado + int(matriz[i][j])
+        print("\n")
+    return resultado
+
+
 mat_a = valores(matriz, matriz_txt, arq)
 mat_b = valores(matriz2, matriz2_txt, arq2)
 imprime_informacao("MATRIZ A")
@@ -67,3 +81,9 @@ imprime_matriz(mat_b)
 
 arq.close()
 arq2.close()
+
+resultado_final = soma_matriz(mat_a, mat_b)
+print()
+print("************ Mat(A) + Mat(B) ************")
+imprime_informacao("RESULTADO")
+imprime_matriz(resultado_final)
