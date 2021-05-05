@@ -46,6 +46,18 @@ def criar_matriz(linhas, colunas, valor):
     return nova_matriz
 
 
+# função para somar as matrizes
+def soma_matriz(matriz_a, matriz_b):
+    linhas = len(matriz_a)
+    colunas = len(matriz_a[0])
+    resultado = criar_matriz(linhas, colunas, 0)
+
+    for linha in range(0, linhas):
+        for coluna in range(0, colunas):
+            resultado[linha][coluna] = int(matriz_a[linha][coluna]) + int(matriz_b[linha][coluna])
+    return resultado
+
+
 mat_a = valores(matriz, matriz_txt, arq)
 mat_b = valores(matriz2, matriz2_txt, arq2)
 imprime_informacao("MATRIZ A")
