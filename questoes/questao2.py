@@ -31,4 +31,8 @@ def ler_dez_numero(tamanho, lista):
     imprimir(tamanho, lista, "digitados")
 
 
+def gerar_dez_numeros(tamanho, lista):
+    for i in range(tamanho):
+        numeros.append(int(random.randint(1, 100)))
 
+    imprimir(tamanho, lista, "gerados")
