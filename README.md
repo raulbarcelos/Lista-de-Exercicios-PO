@@ -3,10 +3,8 @@
 
 
 ****************************************************
-***************         READ ME        *************
-****************************************************
-***************     RAUL BARCELOS     **************
-**************     LISTA EXERCÍCIOS     ************
+> ## Raul Barcelos
+> ## Universidade Federal dos Vales Jequitinhonha e Mucuri 
 ****************************************************
 
 Sistema desenvolvido em Windows.
