@@ -35,6 +35,17 @@ def imprime_informacao(titulo):
     print("*************** {} ****************".format(titulo))
 
 
+# função para criar matrizes
+def criar_matriz(linhas, colunas, valor):
+    nova_matriz = []
+    for i in range(linhas):
+        linha = []
+        for j in range(colunas):
+            linha.append(valor)
+        nova_matriz.append(linha)
+    return nova_matriz
+
+
 mat_a = valores(matriz, matriz_txt, arq)
 mat_b = valores(matriz2, matriz2_txt, arq2)
 imprime_informacao("MATRIZ A")
